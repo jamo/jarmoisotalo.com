@@ -1,0 +1,17 @@
+{
+  "name": "jarmoisotalo.com",
+  "version": "1.0.0",
+  "files": [
+    "index.html",
+    "package.json",
+    "jamoboat.jpg",
+    "jamoboat.mp4",
+    "jamoboat.webm"
+  ],
+  "scripts": {
+    "start": "list -c 450000 ."
+  },
+  "dependencies": {
+    "list": "0.8.2"
+  }
+}
