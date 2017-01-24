@@ -2,16 +2,13 @@
   "name": "jarmoisotalo.com",
   "version": "1.0.0",
   "files": [
-    "index.html",
-    "package.json",
-    "jamoboat.jpg",
-    "jamoboat.mp4",
-    "jamoboat.webm"
+    "content/"
   ],
   "scripts": {
-    "start": "list -c 450000 ."
+    "start": "serve content/",
+    "build": "cd content ; cat jamoboat.mp4* > jamoboat.mp4 ; rm jamoboat.mp4.*"
   },
   "dependencies": {
-    "list": "0.8.2"
+    "serve": "latest"
   }
 }
