@@ -176,7 +176,7 @@ video {
     </nav>
     <script async defer src="https://use.fontawesome.com/e20f027e65.js"></script>
     <script>
-      const video = document.getElementsByTagName('video')[0];
+      var video = document.getElementsByTagName('video')[0];
       var playing = false
 
       if (window.innerWidth > 768) {
@@ -185,19 +185,19 @@ video {
         video.play()
       }
 
-      video.onended = (e) => {
+      video.onended = function(e) {
         video.style.visibility = "hidden"
         playing = false
       }
 
-      document.onkeydown = (e) => {
-        const code = e.keyCode
-        const frame = 2*1001/24000
+      document.onkeydown = function(e){
+        var code = e.keyCode
+        var frame = 2*1001/24000
         if (code === 32) {
           if (video.style.visibility === "hidden") {
             video.style.visibility = "visible"
           }
-          const action = playing ? 'pause' : 'play';
+          var action = playing ? 'pause' : 'play';
           video[action]()
           playing = !playing
         } else if (code == 37 || code == 40) {
