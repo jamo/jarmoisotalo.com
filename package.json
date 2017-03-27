@@ -1,6 +1,15 @@
 {
   "name": "jarmoisotalo.com",
   "version": "1.0.0",
+  "now": {
+    "alias": "jamo.fi",
+    "aliases": [
+      "jamo.io",
+      "jarmoisotalo.com",
+      "isotalo.me",
+      "jamo.fi"
+    ]
+  },
   "files": [
     "content/"
   ],
@@ -9,6 +18,6 @@
     "build": "cd content ; cat jamoboat.mp4* > jamoboat.mp4 ; rm jamoboat.mp4.*"
   },
   "dependencies": {
-    "serve": "latest"
+    "serve": "3.0.2"
   }
 }
