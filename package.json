@@ -2,8 +2,7 @@
   "name": "jarmoisotalo.com",
   "version": "1.0.0",
   "now": {
-    "alias": "jamo.fi",
-    "aliases": [
+    "alias": [
       "jamo.io",
       "jarmoisotalo.com",
       "isotalo.me",
