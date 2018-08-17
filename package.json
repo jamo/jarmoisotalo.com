@@ -1,0 +1,25 @@
+{
+  "name": "jarmoisotalo.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sleep 10",
+    "start": "micro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamo/jarmoisotalo.com.git"
+  },
+  "keywords": [],
+  "author": "Jarmo Isotalo <jarmo@isotalo.fi>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamo/jarmoisotalo.com/issues"
+  },
+  "homepage": "https://github.com/jamo/jarmoisotalo.com#readme",
+  "dependencies": {
+    "micro": "9.3.0",
+    "send": "0.16.2"
+  }
+}
