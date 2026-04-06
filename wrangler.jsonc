@@ -1,17 +1,22 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "jarmoisotalo-com",
+  "name": "jarmoisotalo",
   "compatibility_date": "2026-04-06",
-  "compatibility_flags": [
-    "nodejs_compat"
-  ],
-  "main": "./worker/index.ts",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "vinext/server/app-router-entry",
   "assets": {
-    "directory": "dist/client",
     "not_found_handling": "none",
-    "binding": "ASSETS"
   },
-  "images": {
-    "binding": "IMAGES"
-  }
+  "preview_urls": true,
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "jarmoisotalo.com", "custom_domain": true },
+    { "pattern": "www.jarmoisotalo.com", "custom_domain": true },
+  ],
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true,
+    },
+  },
 }

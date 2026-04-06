@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
+import Gallery from "./components/Gallery";
 
 interface Experience {
   company: string;
@@ -127,8 +129,11 @@ export default function Page() {
         <div className="hero-content">
           <img src="/jarmo.jpg" alt="Jarmo Isotalo" className="hero-avatar" />
           <h1 className="hero-name">Jarmo Isotalo</h1>
-          <p className="hero-tagline">Engineering Leadership & Infrastructure</p>
+          <p className="hero-tagline">Technology & Photography</p>
           <p className="hero-location">Helsinki, Finland</p>
+          <nav className="hero-nav">
+            <Link href="/photography">Photography</Link>
+          </nav>
         </div>
       </section>
 
@@ -137,11 +142,11 @@ export default function Page() {
         <div className="fade-in">
           <p className="section-label">About</p>
           <p className="about-text">
-            Technology executive with over a decade of experience scaling
-            platforms, leading distributed teams, and driving technical strategy
-            at high-growth startups. Deep expertise in large-scale data
-            engineering, site reliability, and building globally distributed
-            systems.
+            Technology executive and photographer based in Helsinki. Over a
+            decade of experience scaling platforms, leading distributed teams,
+            and driving technical strategy at high-growth startups. Outside of
+            engineering, I shoot editorial, content, and advertising photography
+            and do video production.
           </p>
         </div>
       </section>
@@ -177,6 +182,9 @@ export default function Page() {
           ))}
         </div>
       </section>
+
+      {/* Photography */}
+      <Gallery />
 
       {/* Advisory */}
       <section className="section">
@@ -224,6 +232,15 @@ export default function Page() {
             >
               <span className="contact-link-label">LinkedIn</span>
               linkedin.com/in/jarmoisotalo
+            </a>
+            <a
+              href="https://instagram.com/jarmoisotalo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-link"
+            >
+              <span className="contact-link-label">Instagram</span>
+              @jarmoisotalo
             </a>
           </div>
         </div>
