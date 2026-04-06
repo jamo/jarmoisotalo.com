@@ -1,25 +1,27 @@
 {
   "name": "jarmoisotalo.com",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "build": "sleep 10",
-    "start": "micro"
+    "dev": "vinext dev",
+    "build": "vinext build",
+    "start": "vinext start",
+    "deploy": "vinext deploy"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jamo/jarmoisotalo.com.git"
-  },
-  "keywords": [],
-  "author": "Jarmo Isotalo <jarmo@isotalo.fi>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jamo/jarmoisotalo.com/issues"
-  },
-  "homepage": "https://github.com/jamo/jarmoisotalo.com#readme",
   "dependencies": {
-    "micro": "9.3.0",
-    "send": "0.16.2"
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "vinext": "latest"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "1.31.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-rsc": "0.5.22",
+    "react-server-dom-webpack": "19.2.4",
+    "typescript": "~5.8.3",
+    "vite": "^8.0.4",
+    "wrangler": "4.80.0"
   }
 }
